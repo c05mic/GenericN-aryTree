@@ -33,7 +33,7 @@ public class Tree<T> {
 	public int getNumberOfDescendants(Node<T> node) {
 		int n = node.getChildren().size();
 		for (Node<T> child : node.getChildren())
-			n += child.getChildren().size();
+			n += getNumberOfDescendants(child);
 
 		return n;
 
