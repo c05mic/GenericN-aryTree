@@ -42,6 +42,13 @@ public class Node<T> {
 	public Node<T> removeChildAt(int index) {
 		return children.remove(index);
 	}
+	
+	
+	public void removeThisIfItsAChild(Node<T> childToBeDeleted)
+	{
+		List <Node<T>> list = getChildren();
+		list.remove(childToBeDeleted);
+	}
 
 	public T getData() {
 		return this.data;

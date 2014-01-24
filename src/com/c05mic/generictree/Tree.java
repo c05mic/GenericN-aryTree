@@ -52,6 +52,22 @@ public class Tree<T> {
 
 		return res;
 	}
+	
+    private Node<T> findNode(Node<T> node, T keyNode)
+    {
+    	if(node == null)
+    		return null;
+    	if(node.getData().equals(keyNode))
+    		return node;
+    	else
+    	{
+    		Node<T> cnode = null;
+    		for (Node<T> child : node.getChildren())
+    			if ((cnode = findNode(child, keyNode)) != null)
+    				return cnode;
+    	}
+    	return null;         
+    } 
 
 	public ArrayList<Node<T>> getPreOrderTraversal() {
 		ArrayList<Node<T>> preOrder = new ArrayList<Node<T>>();
@@ -91,6 +107,11 @@ public class Tree<T> {
 		return longestPath;
 	}
 
+	public int getMaxDepth()
+	{
+		return getLongestPathFromRootToAnyLeaf().size();
+	}
+	
 	public ArrayList<ArrayList<Node<T>>> getPathsFromRootToAnyLeaf() {
 		ArrayList<ArrayList<Node<T>>> paths = new ArrayList<ArrayList<Node<T>>>();
 		ArrayList<Node<T>> currentPath = new ArrayList<Node<T>>();
