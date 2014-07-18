@@ -88,11 +88,11 @@ public class Tree<T> {
 		}
 	}
 
-	private void buildPostOrder(Node<T> node, ArrayList<Node<T>> preOrder) {
+	private void buildPostOrder(Node<T> node, ArrayList<Node<T>> postOrder) {
 		for (Node<T> child : node.getChildren()) {
-			buildPreOrder(child, preOrder);
+			buildPostOrder(child, postOrder);
 		}
-		preOrder.add(node);
+		postOrder.add(node);
 	}
 
 	public ArrayList<Node<T>> getLongestPathFromRootToAnyLeaf() {
