@@ -11,7 +11,7 @@
  
 ##Example Usage:
  
-```
+```java
 //Create a new Integer type node
 Node<Integer> root = new Node<Integer>(1);
  
