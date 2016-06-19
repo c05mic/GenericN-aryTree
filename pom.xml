@@ -21,6 +21,8 @@
         <developer>
             <name>Sridhar Sundarraman</name>
             <email>srsridhar5@gmail.com</email>
+            <organization>c05mic</organization>
+            <organizationUrl>http://c05mic.com</organizationUrl>
         </developer>
     </developers>
     <scm>
