@@ -6,7 +6,7 @@
 
     <groupId>com.c05mic.generictree</groupId>
     <artifactId>GenericN-aryTree</artifactId>
-    <version>1.1.1-SNAPSHOT</version>
+    <version>1.1.1</version>
 
     <name>Generic N-ary Tree</name>
     <description>Lightweight implementation of a generic N-ary tree in Java.</description>
