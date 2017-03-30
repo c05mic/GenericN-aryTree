@@ -1,6 +1,6 @@
-#Simple Generic N-ary Tree implementation in Java
+# Simple Generic N-ary Tree implementation in Java
  
-##Utility methods:
+## Utility methods:
  
 1. To check if a node exists in the tree.
 2. To find the total number of nodes in the tree
@@ -9,7 +9,7 @@
 5. To get all longest path from the root to any leaf.
 6. To get the pre-order/post-order traversal path as a List.
  
-##Example Usage:
+## Example Usage:
  
 ```java
 // Create a new Integer type node
@@ -25,7 +25,7 @@ Tree<Integer> tree = new Tree<Integer>(root);
 List<Node<Integer>> preOrder = tree.getPreOrderTraversal();
 ```
 
-##Download:
+## Download:
 
 Maven:
 
